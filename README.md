@@ -1,3 +1,5 @@
+<center><img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/320107669/original/484a05a1378ca78e78476b061c4844b13da2d21c/create-a-discord-bot-with-bunch-of-features.png" /></center>
+
 # Discord Bot Base
 
 A basic Discord bot with a `/example` command to get started quickly. This repository is designed to be easy to set up and customize.
