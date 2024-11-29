@@ -12,8 +12,18 @@ function loadJSON(file) {
     }
 }
 
+const getTimestamp = () => {
+    const now = new Date();
+    return `[${now.toISOString().replace('T', ' ').split('.')[0]}]`;
+};
+
+const writeLogToFile = (message) => {
+    const logMessage = `${getTimestamp()} ${message}\n`;
+    fs.appendFileSync('./bot.log', logMessage, 'utf8');
+};
+
 function saveJSON(file, data) {
-    fs.writeFileSync(file, JSON.stringify(data, null, 4));
+    fs.writeFileSync(file, JSON.stringify(data, null, 4));  
 }
 
-module.exports = { loadConfig, loadJSON, saveJSON };
+module.exports = { loadConfig, loadJSON, saveJSON, getTimestamp, writeLogToFile };

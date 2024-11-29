@@ -1,5 +1,6 @@
 {
     "token": "BOT TOKEN", 
     "clientId": "APPLICATION ID",
-    "guildId": "GUILD ID (OPTIONAL)"
+    "guildId": "GUILD ID (OPTIONAL)",
+    "debug": false
 }
