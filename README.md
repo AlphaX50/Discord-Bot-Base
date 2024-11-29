@@ -54,7 +54,8 @@ Modify the config.json file at the root of the project and fill in the necessary
 {
   "token": "BOT TOKEN",
   "clientId": "APPLICATION ID",
-  "guildId": "GUILD ID (OPTIONAL)"
+  "guildId": "GUILD ID (OPTIONAL)",
+  "debug" : false
 }
 ```
 
