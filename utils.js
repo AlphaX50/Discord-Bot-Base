@@ -14,12 +14,13 @@ function loadJSON(file) {
 
 const getTimestamp = () => {
     const now = new Date();
-    return `[${now.toISOString().replace('T', ' ').split('.')[0]}]`;
+    const timestamp = now.toLocaleString('fr-FR', { timeZone: 'Europe/Paris' }).replace(',', '');
+    return `[${timestamp}]`;
 };
 
 const writeLogToFile = (message) => {
     const logMessage = `${getTimestamp()} ${message}\n`;
-    fs.appendFileSync('./bot.log', logMessage, 'utf8');
+    fs.appendFileSync('./data/bot.log', logMessage, 'utf8');
 };
 
 function saveJSON(file, data) {
