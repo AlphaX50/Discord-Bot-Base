@@ -52,10 +52,11 @@ Modify the config.json file at the root of the project and fill in the necessary
 
 ```json
 {
-  "token": "BOT TOKEN",
-  "clientId": "APPLICATION ID",
-  "guildId": "GUILD ID (OPTIONAL)",
-  "debug" : false
+  "token": "BOT_TOKEN",
+  "clientId": "APPLICATION_ID",
+  "guildId": "GUILD_ID_(OPTIONAL)",
+  "debug" : false,
+  "moderator": ""
 }
 ```
 
